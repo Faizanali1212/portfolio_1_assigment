@@ -1,0 +1,740 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+
+:root {
+  --primary-color: #383847;
+  --secondery-color: white;
+  --tharad-color: #4d5766;
+  --forth-color: #777879;
+  --fifth-color: #FFD500;
+  --sisth-color: #212921;
+  --seventh-color: #1C1A25;
+  --eight--color: #4D4D62;
+  --ninth-color: #45638d;
+  --tenth-color: aqua;
+  --eleventh-color:#fff;
+  --twelveth-color:#00bcd4;
+  --thirteen-color: #bbb;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 200px;
+}
+
+.nav {
+  color: var(--forth-color);
+  font-family:sans-serif;
+}
+
+.nav:hover {
+  color: var(--tenth-color);
+  transition: 2s ease;
+  transform: scale(1.5);
+}
+
+
+/* --- Navbar Icons Section --- */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Circle Container */
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--fifth-color);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Icon Style */
+.icon-circle i {
+  color: var(--fifth-color);
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.icon-circle:hover {
+  background-color: var(--fifth-color);
+  box-shadow: 0 0 15px var(--fifth-color);
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.icon-circle:hover i {
+  color: var(--primary-color);
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; 
+  border-radius: 50%; 
+}
+
+#adam {
+  font-size: 35px;
+  color: var(--secondery-color);
+  font-family: sans-serif;
+  margin-top: 0px;
+}
+
+#adam:hover {
+  color: var(--tenth-color);
+  transition: 2s ease;
+  transform: rotate(360deg);
+
+}
+
+
+.h1 {
+  font-family: sans-serif;
+  color: var(--forth-color);
+  font-size: 100px;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.h1:hover {
+  color: var(--tenth-color);
+  transition: 2s ease;
+  transform: translate(8px)
+}
+
+
+
+.h2 {
+  font-family: sans-serif;
+  color: var(--secondery-color);
+  font-size: 70px;
+  margin-left: 6%;
+}
+
+.line {
+  border: solid var(--fifth-color);
+  width: 15%;
+  margin-left: 6%;
+
+}
+
+.parasec1 {
+  color: var(--secondery-color);
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 15%;
+  height: 20%;
+  margin-left: 6%;
+}
+
+.parasec1:hover{
+  color: var(--twelveth-color);
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+.image {
+  border: solid var(--eight--color);
+  background-color: var(--eight--color);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: 40%;
+  position: absolute;
+  top: 200px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  /* smooth hover transition */
+}
+
+.imageintro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  /* smooth zoom effect */
+}
+
+
+/*  Hover Effect */
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 255, 200, 0.5);
+  /* cool glow */
+}
+
+.image:hover img {
+  transform: scale(1.1);
+  /* image zoom in */
+  filter: brightness(1.1);
+}
+
+.para2{
+  display:flex;
+  margin-left:70%;
+  color: var(--secondery-color);
+  font-family:sans-serif;
+  width: 25%;
+  height: 10%;
+  font-size: 200%;
+  position:absolute;
+  top: 200px;
+}
+
+.para2:hover{
+  color: var(--twelveth-color);
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .para2 {
+    font-size: 1.2rem;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .h2 {
+    font-size:30px;
+}
+}
+
+.para2:hover{
+  color: var(--twelveth-color);
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+.box_1 {
+  border: solid var(--primary-color);
+  background-color: var(--primary-color);
+  height: 700px;
+}
+
+.box_2 {
+  width: 500px;
+  height: 100px;
+  margin-left: 25%;
+  margin-top: %;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show-more{
+  color: var(--fifth-color);
+  display: flex;
+  font-size: 30px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-top:1%;
+  margin-left:61%;
+}
+
+.social-icons-service {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;   
+  margin-left: 60%; 
+  align-items: center;
+}
+
+.icon {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  border: 2px solid var(--fifth-color);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+  border-color: var(--tenth-color);
+  box-shadow: 0 0 15px var(--tenth-color);
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+
+.meta1,
+.google1,
+.you1,
+.what {
+  border:solid var(--eight--color);
+  border-radius:20px;
+  width:200px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.meta1:hover,
+.google1:hover,
+.you1:hover,
+.what:hover {
+  background-color: var(--eight--color);
+  color:var(--secondery-color);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--eight--color);
+  cursor: pointer;
+}
+
+
+.skills-section {
+  width: 102vw;
+  background-color: var(--primary-color);
+  padding: 100px 5%;
+  box-sizing: border-box;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ---------- Left Side Text ---------- */
+.skills-text {
+  flex: 1;
+  color: var(--secondery-color);
+  min-width: 320px;
+}
+
+.skills-text h1 {
+  font-size: 70px;
+  color: var(--secondery-color);
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.line {
+  border: solid var(--fifth-color) 3px;
+  width: 150px;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.skills-para {
+  font-size: 16px;
+  line-height: 1.6;
+  width: 80%;
+  color: var(--forth-color);
+  margin-bottom: 50px;
+}
+
+/* ---------- Buttons / Skills ---------- */
+.skills-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: var(--tharad-color);
+  color: var(--secondery-color);
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  background-color: var(--fifth-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 213, 0, 0.3);
+}
+
+/* ---------- Right Side Image ---------- */
+.skills-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+}
+
+.skills-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--fifth-color);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.skills-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 35px rgba(255, 213, 0, 0.4);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .skills-text h1 {
+    font-size: 50px;
+  }
+
+  .skills-para {
+    width: 100%;
+  }
+
+  .skills-image img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .skill-item {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+
+/*  Footer Section Style */
+.footer {
+  width: 101%;
+  background: #111;
+  color:var(--eleventh-color);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--twelveth-color);
+}
+
+.footer-content p {
+  font-size: 14px;
+  color: var(--thirteen-color);
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color:var(--thirteen-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--twelveth-color);
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color:var(--twelveth-color);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color:var(--twelveth-color);
+}
+
+@media (max-width: 768px) {
+  .footer-content h2 {
+    font-size: 20px;
+  }
+}
+
+/*  Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  color: var(--secondery-color);
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--fifth-color);
+  transform: scale(1.2);
+  text-shadow: 0 0 15px var(--fifth-color);
+}
+
+
+.footer-copy {
+  font-size: 14px;
+  color: var(--forth-color);
+}
+
+/*  Responsive */
+@media (max-width: 768px) {
+  .footer-heading {
+    font-size: 30px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   🔹 FULL RESPONSIVE DESIGN 🔹
+========================= */
+
+/* Tablet View (768px تک) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  .nav-icons {
+    gap: 10px;
+  }
+
+  .image {
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .h1 {
+    font-size: 60px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .parasec1,
+  .para2 {
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .box_2 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .show-more {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .social-icons-service {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .skills-section {
+    padding: 60px 5%;
+  }
+
+  .skills-text h1 {
+    font-size: 40px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile View (480px تک) */
+@media (max-width: 480px) {
+  #adam {
+    font-size: 25px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .icon-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .h1 {
+    font-size: 45px;
+  }
+
+  .h2 {
+    font-size: 28px;
+  }
+
+  .parasec1,
+  .para2 {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .skills-text h1 {
+    font-size: 30px;
+  }
+
+  .skill-item {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .skills-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .footer-content h2 {
+    font-size: 18px;
+  }
+
+  .footer-links a {
+    display: block;
+    margin:5px 0;
+}
+}
+
+/* ----------------- Box_2 سیکشن کے لیے Responsive ڈیزائن ----------------- */
+@media (max-width: 768px) {
+  .box_2 {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box_2 img {
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .line3 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .box_2 {
+    gap: 15px;
+  }
+
+  .box_2 img {
+    width:100px;
+}
+}
+
+/* ----------------- What Can I Do Section Responsive ----------------- */
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .skills-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .skills-text {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-image img {
+    width:100%;
+}
+}
