@@ -247,7 +247,6 @@ body {
   width: 500px;
   height: 100px;
   margin-left: 25%;
-  margin-top: %;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -497,8 +496,8 @@ body {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 1px;
 }
 
 .social-icon {
